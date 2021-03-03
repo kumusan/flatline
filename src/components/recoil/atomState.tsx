@@ -1,8 +1,20 @@
 import { atom, selector } from "recoil";
 
-export const listState = atom<string>({
+type List = {
+  id: number;
+  text: string;
+  isCheck: boolean;
+};
+
+export const listState = atom<Array<List>>({
   key: "listState",
-  default: "a",
+  default: [
+    {
+      id: 1,
+      text: "text",
+      isCheck: false,
+    },
+  ],
 });
 
 export const countState = selector<number>({
