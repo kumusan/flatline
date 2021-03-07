@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSetRecoilState } from "recoil";
 import { listState } from "./recoil/atomState";
 
-export const Create = () => {
+const Create = () => {
   const [inputValue, setInputValue] = useState("");
   const setList = useSetRecoilState(listState);
 
@@ -29,3 +29,4 @@ export const Create = () => {
     </div>
   );
 };
+export default Create;

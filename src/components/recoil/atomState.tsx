@@ -1,4 +1,4 @@
-import { atom, selector } from "recoil";
+import { atom } from "recoil";
 
 type List = {
   id: number;
@@ -15,12 +15,4 @@ export const listState = atom<Array<List>>({
       isCheck: false,
     },
   ],
-});
-
-export const countState = selector<number>({
-  key: "countState",
-  get: ({ get }) => {
-    const text = get(listState);
-    return text.length;
-  },
 });

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Create } from "./components/create";
-import { Show } from "./components/show";
+import Create from "./components/create";
+import Show from "./components/show";
 
 function App() {
   return (
