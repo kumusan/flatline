@@ -12,7 +12,7 @@ export const listState = atom<Array<List>>({
     {
       id: 1,
       text: "text",
-      isCheck: false,
+      isCheck: true,
     },
   ],
 });
